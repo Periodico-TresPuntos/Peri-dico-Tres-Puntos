@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "portada"
+    label: "Portada del Periódico"
+    files:
+      - file: "index.html"
+        label: "Editar Portada"
+        name: "index"
+        fields:
+          - {label: "Título de la Noticia Destacada", name: "titulo_destacado", widget: "string"}
+          - {label: "Texto del Destacado", name: "texto_destacado", widget: "text"}
