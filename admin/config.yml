@@ -16,50 +16,20 @@ collections:
           - {label: "Título de la Noticia Destacada", name: "titulo_destacado", widget: "string"}
           - {label: "Texto del Destacado", name: "texto_destacado", widget: "text"}
 
-  - name: "secciones"
-    label: "Secciones del Periódico"
+  - name: "noticias"
+    label: "Secciones y Noticias"
     files:
       - file: "noticias.json"
-        label: "Ciencia"
-        name: "ciencia"
+        label: "Todas las Noticias"
+        name: "lista_noticias"
         fields:
-          - label: "Artículos de Ciencia"
+          - label: "Artículos del Periódico"
             name: "articulos"
             widget: "list"
             fields:
-              - {label: "Título", name: "title", widget: "string"}
-              - {label: "Sección fija", name: "seccion", widget: "hidden", default: "Ciencia"}
-              - {label: "¿Destacado?", name: "destacado", widget: "boolean", default: false, required: false}
-              - {label: "Fecha", name: "date", widget: "datetime"}
-              - {label: "Imagen", name: "image", widget: "image", required: false}
-              - {label: "Contenido", name: "body", widget: "markdown"}
-
-      - file: "noticias.json"
-        label: "Gaming"
-        name: "gaming"
-        fields:
-          - label: "Artículos de Gaming"
-            name: "articulos"
-            widget: "list"
-            fields:
-              - {label: "Título", name: "title", widget: "string"}
-              - {label: "Sección fija", name: "seccion", widget: "hidden", default: "Gaming"}
-              - {label: "¿Destacado?", name: "destacado", widget: "boolean", default: false, required: false}
-              - {label: "Fecha", name: "date", widget: "datetime"}
-              - {label: "Imagen", name: "image", widget: "image", required: false}
-              - {label: "Contenido", name: "body", widget: "markdown"}
-
-      - file: "noticias.json"
-        label: "Deportes"
-        name: "deportes"
-        fields:
-          - label: "Artículos de Deportes"
-            name: "articulos"
-            widget: "list"
-            fields:
-              - {label: "Título", name: "title", widget: "string"}
-              - {label: "Sección fija", name: "seccion", widget: "hidden", default: "Deportes"}
-              - {label: "¿Destacado?", name: "destacado", widget: "boolean", default: false, required: false}
-              - {label: "Fecha", name: "date", widget: "datetime"}
-              - {label: "Imagen", name: "image", widget: "image", required: false}
+              - {label: "Título de la Noticia", name: "title", widget: "string"}
+              - {label: "Sección", name: "seccion", widget: "select", options: ["Ciencia", "Cine y Series", "Deportes", "eSports", "Eventos", "Gaming", "Literatura", "Local", "Mundo Actoral", "Música", "Tecnología"]}
+              - {label: "¿Marcar como Destacado?", name: "destacado", widget: "boolean", default: false, required: false}
+              - {label: "Fecha de Publicación", name: "date", widget: "datetime"}
+              - {label: "Imagen Principal", name: "image", widget: "image", required: false}
               - {label: "Contenido", name: "body", widget: "markdown"}
