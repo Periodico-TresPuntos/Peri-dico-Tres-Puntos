@@ -79,6 +79,13 @@
       "date": "2026-08-31T02:45:00.000-04:00",
       "image": "",
       "body": "Trascendió que ejecutivos de Google han intensificado sus acercamientos con grandes estudios de Hollywood (incluyendo a Disney, Universal y Warner Bros. Discovery) con el objetivo de negociar licencias oficiales de propiedad intelectual. \n\nLa intención es asegurar permisos legales para incorporar personajes y franquicias icónicas de la industria del entretenimiento dentro de sus próximas herramientas creativas de generación de contenido visual y de video, buscando evitar las disputas legales que han frenado a otros desarrolladores de IA."
+    },
+    {
+      "destacado": false,
+      "title": "Alianza estratégica ampliada entre NVIDIA y MediaTek en IA",
+      "seccion": "Tecnología",
+      "date": "2026-09-01T18:46:00.000-04:00",
+      "body": "NVIDIA y MediaTek anunciaron la expansión profunda de su colaboración tecnológica para construir la próxima generación de plataformas informáticas de inteligencia artificial. \n\nEl acuerdo une la supremacía de NVIDIA en procesamiento pesado de centros de datos con la experiencia de MediaTek en chips móviles de bajo consumo y computación de borde (edge computing).\n\n El objetivo es unificar la arquitectura de IA para que vehículos inteligentes, dispositivos IoT y smartphones procesen modelos avanzados localmente sin depender exclusivamente de la nube."
     }
   ]
 }
