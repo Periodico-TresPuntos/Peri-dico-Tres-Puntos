@@ -18,19 +18,15 @@ collections:
 
   - name: "noticias"
     label: "Secciones y Noticias"
-    files:
-      - file: "noticias.json"
-        label: "Lista de Noticias"
-        name: "lista_noticias"
-        description: "Agrega, edita o borra todas las noticias del periódico aquí."
-        fields:
-          - label: "Artículos"
-            name: "articulos"
-            widget: "list"
-            fields:
-              - {label: "Título de la Noticia", name: "title", widget: "string"}
-              - {label: "Sección", name: "seccion", widget: "select", options: ["Ciencia", "Cine y Series", "Deportes", "eSports", "Eventos", "Gaming", "Literatura", "Local", "Mundo Actoral", "Música", "Tecnología"]}
-              - {label: "¿Marcar como Destacado?", name: "destacado", widget: "boolean", default: false, required: false}
-              - {label: "Fecha", name: "date", widget: "datetime"}
-              - {label: "Imagen Principal", name: "image", widget: "image", required: false}
-              - {label: "Contenido de la Noticia", name: "body", widget: "markdown"}
+    folder: "_noticias"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{title}} — [{{seccion}}] ({{date}})"
+    fields:
+      - {label: "Título de la Noticia", name: "title", widget: "string"}
+      - {label: "Sección", name: "seccion", widget: "select", options: ["Ciencia", "Cine y Series", "Deportes", "eSports", "Eventos", "Gaming", "Literatura", "Local", "Mundo Actoral", "Música", "Tecnología"]}
+      - {label: "¿Marcar como Destacado?", name: "destacado", widget: "boolean", default: false, required: false}
+      - {label: "Autor", name: "autor", widget: "string", default: "Redacción Tres Puntos", required: false}
+      - {label: "Fecha de Publicación", name: "date", widget: "datetime"}
+      - {label: "Imagen Principal", name: "image", widget: "image", required: false}
+      - {label: "Contenido de la Noticia", name: "body", widget: "markdown"}
