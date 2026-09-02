@@ -4,7 +4,7 @@
       "destacado": false,
       "seccion": "Ciencia",
       "title": "Lanzamiento del Telescopio Espacial Nancy Grace Roman",
-      "body": "La NASA concretó con éxito el despegue de su nuevo observatorio espacial a bordo de un cohete Falcon Heavy de SpaceX. Este telescopio, bautizado en honor a la \"madre de Hubble\", tiene como objetivo principal estudiar los misterios de la energía oscura y la expansión acelerada del universo.",
+      "body": "La NASA concretó con éxito el despegue de su nuevo observatorio espacial a bordo de un cohete Falcon Heavy de SpaceX. Este telescopio, bautizado en honor a la \\\"madre de Hubble\\\", tiene como objetivo principal estudiar los misterios de la energía oscura y la expansión acelerada del universo.",
       "image": "https://danielmarin.naukas.com/files/2026/08/KSC-20260824-PH-SER02_0001large.jpg",
       "date": "2026-08-30T07:27:00.000-04:00"
     },
@@ -13,8 +13,8 @@
       "title": "Detección cardíaca por IA",
       "seccion": "Ciencia",
       "date": "2026-09-02T13:11:00.000-04:00",
-      "image": "https://images.ecestaticos.com/LvlgXeW3XxOjWEkQpAAStoZ9A_k=/136x1:2019x1414/557x418/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F1e3%2Fde6%2Fa68%2F1e3de6a68f76e1f3e5bc9fbbcced3532.jpg",
-      "body": "Se presentó una herramienta de inteligencia artificial de nivel \"superhumano\" capaz de detectar enfermedades cardíacas en menos de dos segundos."
+      "image": "https://images.ecestaticos.com/LvlGXeW3Xx0jWEkQpAAstOZ9A_k=/136x1:2019x1414/557x418/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Ff1e%3Fde6%2Ffa6%2Ff1e3de6a68f76e1f3e5bc9fbbcced3532.jpg",
+      "body": "Se presentó una herramienta de inteligencia artificial de nivel \\\"superhumano\\\" capaz de detectar enfermedades cardíacas en menos de dos segundos."
     },
     {
       "destacado": true,
@@ -22,7 +22,7 @@
       "seccion": "Ciencia",
       "date": "2026-09-02T13:15:00.000-04:00",
       "body": "Científicos lograron esclarecer con mayor precisión los mecanismos moleculares exactos detrás del uso prolongado de la metformina (un popular fármaco para la diabetes) y su impacto metabólico a nivel celular, abriendo puertas a nuevas investigaciones sobre el envejecimiento saludable.",
-      "image": "https://e01-phantom-elmundo.uecdn.es/4990888e655cb48ace4f28aaf5d58f11/resize/646/f/webp/assets/multimedia/imagenes/2023/04/27/16825782576970.jpg"
+      "image": "https://e01-phantom-elmundo.uecdn.es/4990888e655cb48ace4f28aaf5d58f11/resize/646/f/webp/assets/multimedia/imagenes/2023/04/27/16825782576978.jpg"
     },
     {
       "destacado": false,
@@ -30,7 +30,88 @@
       "seccion": "Ciencia",
       "date": "2026-08-31T13:17:00.000-04:00",
       "body": "Científicos descubrieron que membranas ultrafinas y flexibles de diamante son capaces de generar electricidad a través de deformaciones mecánicas gracias a un fuerte y repetible efecto piezoeléctrico, algo que antes se creía imposible para este material.",
-      "image": "https://www.clemenciaperis.com/wp-content/uploads/2023/08/sb10065243e-001.jpg"
+      "image": "https://www.clemenciaperis.com/wp-content/uploads/2023/08/sb10865243e-001.jpg"
+    },
+    {
+      "destacado": false,
+      "seccion": "Gaming",
+      "title": "Próximo lanzamiento destacado en Gaming",
+      "body": "Espacio reservado para las novedades del mundo de los videojuegos.",
+      "image": "",
+      "date": "2026-09-02T14:00:00.000-04:00"
+    },
+    {
+      "destacado": false,
+      "seccion": "Cine y Series",
+      "title": "Estrenos de la semana en cartelera",
+      "body": "Espacio reservado para las reseñas de cine y series.",
+      "image": "",
+      "date": "2026-09-02T14:00:00.000-04:00"
+    },
+    {
+      "destacado": false,
+      "seccion": "Deportes",
+      "title": "Resumen de la jornada deportiva",
+      "body": "Espacio reservado para la sección de deportes.",
+      "image": "",
+      "date": "2026-09-02T14:00:00.000-04:00"
+    },
+    {
+      "destacado": false,
+      "seccion": "eSports",
+      "title": "Actualidad competitiva en eSports",
+      "body": "Espacio reservado para torneos y competiciones.",
+      "image": "",
+      "date": "2026-09-02T14:00:00.000-04:00"
+    },
+    {
+      "destacado": false,
+      "seccion": "Eventos",
+      "title": "Próximos eventos de la temporada",
+      "body": "Espacio reservado para la agenda de eventos.",
+      "image": "",
+      "date": "2026-09-02T14:00:00.000-04:00"
+    },
+    {
+      "destacado": false,
+      "seccion": "Literatura",
+      "title": "Recomendaciones literarias",
+      "body": "Espacio reservado para libros y literatura.",
+      "image": "",
+      "date": "2026-09-02T14:00:00.000-04:00"
+    },
+    {
+      "destacado": false,
+      "seccion": "Local",
+      "title": "Noticias de interés local",
+      "body": "Espacio reservado para la sección local.",
+      "image": "",
+      "date": "2026-09-02T14:00:00.000-04:00"
+    },
+    {
+      "destacado": false,
+      "seccion": "Mundo Actoral",
+      "title": "Novedades del mundo actoral",
+      "body": "Espacio reservado para entrevistas y actualidad de actores.",
+      "image": "",
+      "date": "2026-09-02T14:00:00.000-04:00"
+    },
+    {
+      "str": "Música",
+      "destacado": false,
+      "seccion": "Música",
+      "title": "Lanzamientos musicales de la semana",
+      "body": "Espacio reservado para discos y artistas.",
+      "image": "",
+      "date": "2026-09-02T14:00:00.000-04:00"
+    },
+    {
+      "destacado": false,
+      "seccion": "Tecnología",
+      "title": "Avances tecnológicos recientes",
+      "body": "Espacio reservado para gadgets e innovación.",
+      "image": "",
+      "date": "2026-09-02T14:00:00.000-04:00"
     }
   ]
 }
