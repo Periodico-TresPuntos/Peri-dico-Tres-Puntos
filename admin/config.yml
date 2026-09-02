@@ -34,4 +34,32 @@ collections:
               - {label: "Imagen", name: "image", widget: "image", required: false}
               - {label: "Contenido", name: "body", widget: "markdown"}
 
-      # Si deseas agregar más secciones separadas en el menú lateral, puedes duplicar bloques de archivos aquí o mantener un JSON consolidado filtrado.
+      - file: "noticias.json"
+        label: "Gaming"
+        name: "gaming"
+        fields:
+          - label: "Artículos de Gaming"
+            name: "articulos"
+            widget: "list"
+            fields:
+              - {label: "Título", name: "title", widget: "string"}
+              - {label: "Sección fija", name: "seccion", widget: "hidden", default: "Gaming"}
+              - {label: "¿Destacado?", name: "destacado", widget: "boolean", default: false, required: false}
+              - {label: "Fecha", name: "date", widget: "datetime"}
+              - {label: "Imagen", name: "image", widget: "image", required: false}
+              - {label: "Contenido", name: "body", widget: "markdown"}
+
+      - file: "noticias.json"
+        label: "Deportes"
+        name: "deportes"
+        fields:
+          - label: "Artículos de Deportes"
+            name: "articulos"
+            widget: "list"
+            fields:
+              - {label: "Título", name: "title", widget: "string"}
+              - {label: "Sección fija", name: "seccion", widget: "hidden", default: "Deportes"}
+              - {label: "¿Destacado?", name: "destacado", widget: "boolean", default: false, required: false}
+              - {label: "Fecha", name: "date", widget: "datetime"}
+              - {label: "Imagen", name: "image", widget: "image", required: false}
+              - {label: "Contenido", name: "body", widget: "markdown"}
