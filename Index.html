@@ -9,9 +9,15 @@
 </head>
 <body class="bg-gray-100 text-gray-800">
 
+    <!-- Cabecera del periódico idéntica a tus otras páginas -->
+    <header class="bg-white border-b border-gray-300 py-6 text-center">
+        <h1 class="text-4xl md:text-5xl font-serif tracking-widest text-gray-900 font-bold">TRES PUNTOS</h1>
+        <p class="text-xs tracking-widest text-gray-500 uppercase mt-1">No esperes, el suspenso... continuará</p>
+    </header>
+
     <!-- Barra de Navegación / Secciones -->
-    <header class="bg-gray-900 text-white shadow-md">
-        <div class="container mx-auto px-4 py-3 flex flex-wrap justify-center gap-4 text-sm font-semibold tracking-wider">
+    <nav class="bg-gray-900 text-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex flex-wrap justify-center gap-4 text-xs font-semibold tracking-wider">
             <a href="index.html" class="text-red-500 hover:text-red-400">PORTADA</a>
             <a href="cine-y-series.html" class="hover:text-red-400">CINE Y SERIES</a>
             <a href="mundo-actoral.html" class="hover:text-red-400">MUNDO ACTORAL</a>
@@ -25,56 +31,55 @@
             <a href="deportes.html" class="hover:text-red-400">DEPORTES</a>
             <a href="local.html" class="hover:text-red-400">LOCAL</a>
         </div>
-    </header>
+    </nav>
 
     <!-- Contenido Principal -->
-    <main class="container mx-auto px-4 py-8 max-w-5xl">
+    <main class="container mx-auto px-4 py-8 max-w-4xl">
 
         <!-- Sección Destacada de la Portada -->
-        <section class="bg-white rounded-lg shadow-md p-6 md:p-8 border-t-4 border-red-600 mb-12">
-            <div class="inline-block bg-red-600 text-white text-xs font-bold px-3 py-1 rounded uppercase tracking-wider mb-4">
+        <section class="bg-white rounded shadow p-6 md:p-8 border border-gray-200 mb-12">
+            <div class="inline-block bg-red-600 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider mb-3">
                 Destacado de la Semana
             </div>
             
-            <!-- Título dinámico conectado al JSON -->
-            <h1 id="titulo-destacado" class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <!-- Título dinámico conectado al panel -->
+            <h2 id="titulo-destacado" class="text-2xl md:text-3xl font-serif font-bold text-gray-900 mb-3">
                 Cargando titular...
-            </h1>
+            </h2>
             
-            <!-- Texto dinámico conectado al JSON -->
-            <p id="texto-destacado" class="text-gray-600 text-lg leading-relaxed mb-6">
-                Cargando contenido de la portada...
+            <!-- Texto dinámico conectado al panel -->
+            <p id="texto-destacado" class="text-gray-600 text-base leading-relaxed mb-4">
+                Cargando contenido...
             </p>
 
-            <div id="contenedor-enlace">
-                <!-- El enlace se actualizará o se dirigirá al panel/sección -->
-                <a id="enlace-noticia" href="#" class="inline-block text-red-600 font-semibold hover:underline">
+            <div>
+                <a id="enlace-noticia" href="#" class="text-xs text-red-600 font-semibold hover:underline">
                     Leer artículo completo &rarr;
                 </a>
             </div>
         </section>
 
-        <!-- Cronograma Semanal o Secciones Secundarias -->
+        <!-- Cronograma Semanal -->
         <section>
-            <h2 class="text-center text-xl font-bold text-gray-700 tracking-widest uppercase mb-6">
+            <h3 class="text-center text-sm font-bold text-gray-500 tracking-widest uppercase mb-6">
                 Cronograma Semanal
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
-                <div class="bg-white p-4 rounded shadow">
-                    <span class="block text-red-600 font-bold mb-2">LUNES</span>
-                    <a href="literatura.html" class="text-sm text-gray-500 hover:underline">Literatura</a>
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-center text-sm">
+                <div class="bg-white p-4 rounded shadow border border-gray-200">
+                    <span class="block text-red-600 font-bold mb-1">LUNES</span>
+                    <a href="literatura.html" class="text-gray-500 hover:underline">Literatura</a>
                 </div>
-                <div class="bg-white p-4 rounded shadow">
-                    <span class="block text-red-600 font-bold mb-2">MIÉRCOLES</span>
-                    <a href="ciencia.html" class="text-sm text-gray-500 hover:underline">Ciencia</a>
+                <div class="bg-white p-4 rounded shadow border border-gray-200">
+                    <span class="block text-red-600 font-bold mb-1">MIÉRCOLES</span>
+                    <a href="ciencia.html" class="text-gray-500 hover:underline">Ciencia</a>
                 </div>
-                <div class="bg-white p-4 rounded shadow">
-                    <span class="block text-red-600 font-bold mb-2">VIERNES</span>
-                    <a href="mundo-actoral.html" class="text-sm text-gray-500 hover:underline">Mundo Actoral</a>
+                <div class="bg-white p-4 rounded shadow border border-gray-200">
+                    <span class="block text-red-600 font-bold mb-1">VIERNES</span>
+                    <a href="mundo-actoral.html" class="text-gray-500 hover:underline">Mundo Actoral</a>
                 </div>
-                <div class="bg-white p-4 rounded shadow">
-                    <span class="block text-red-600 font-bold mb-2">DOMINGO</span>
-                    <a href="deportes.html" class="text-sm text-gray-500 hover:underline">Deportes</a>
+                <div class="bg-white p-4 rounded shadow border border-gray-200">
+                    <span class="block text-red-600 font-bold mb-1">DOMINGO</span>
+                    <a href="deportes.html" class="text-gray-500 hover:underline">Deportes</a>
                 </div>
             </div>
         </section>
@@ -82,43 +87,36 @@
     </main>
 
     <!-- Pie de página -->
-    <footer class="text-center py-6 text-gray-500 text-sm mt-12 border-t border-gray-200">
+    <footer class="text-center py-6 text-gray-400 text-xs mt-12 border-t border-gray-200">
         <p>Tres Puntos &copy; 2026 | No esperes, el suspenso... continuará</p>
     </footer>
 
-    <!-- Script JavaScript para conectar index.html con portada.json -->
+    <!-- Script de sincronización con el panel de administración -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             fetch('portada.json')
                 .then(response => {
-                    if (!response.ok) {
-                        throw new Error("No se pudo cargar el archivo portada.json");
-                    }
+                    if (!response.ok) throw new Error("No se pudo cargar el archivo");
                     return response.json();
                 })
                 .then(data => {
-                    // Actualiza el título destacado
                     const tituloEl = document.getElementById('titulo-destacado');
                     if (tituloEl && data.titulo_destacado) {
                         tituloEl.textContent = data.titulo_destacado;
                     }
 
-                    // Actualiza el texto destacado
                     const textoEl = document.getElementById('texto-destacado');
                     if (textoEl && data.texto_destacado) {
                         textoEl.textContent = data.texto_destacado;
                     }
 
-                    // Actualiza el enlace opcional si se ingresó uno en el admin
                     const enlaceEl = document.getElementById('enlace-noticia');
                     if (enlaceEl && data.enlace) {
                         enlaceEl.href = data.enlace;
                     }
                 })
                 .catch(error => {
-                    console.error("Error al sincronizar la portada:", error);
-                    document.getElementById('titulo-destacado').textContent = "Bienvenido a Tres Puntos";
-                    document.getElementById('texto-destacado').textContent = "Utiliza el panel de administración para configurar la noticia destacada de la semana.";
+                    console.log("Usando contenido por defecto");
                 });
         });
     </script>
