@@ -9,7 +9,7 @@
 </head>
 <body class="bg-gray-100 text-gray-800">
 
-    <!-- Cabecera del periódico idéntica a tus otras páginas -->
+    <!-- Cabecera del periódico original -->
     <header class="bg-white border-b border-gray-300 py-6 text-center">
         <h1 class="text-4xl md:text-5xl font-serif tracking-widest text-gray-900 font-bold">TRES PUNTOS</h1>
         <p class="text-xs tracking-widest text-gray-500 uppercase mt-1">No esperes, el suspenso... continuará</p>
@@ -59,28 +59,51 @@
             </div>
         </section>
 
-        <!-- Cronograma Semanal -->
+        <!-- Cronograma Semanal Completo -->
         <section>
             <h3 class="text-center text-sm font-bold text-gray-500 tracking-widest uppercase mb-6">
                 Cronograma Semanal
             </h3>
             <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-center text-sm">
-                <div class="bg-white p-4 rounded shadow border border-gray-200">
-                    <span class="block text-red-600 font-bold mb-1">LUNES</span>
-                    <a href="literatura.html" class="text-gray-500 hover:underline">Literatura</a>
+                
+                <!-- LUNES -->
+                <div class="bg-white p-4 rounded shadow border border-gray-200 flex flex-col justify-between">
+                    <span class="block text-red-600 font-bold mb-2">LUNES</span>
+                    <div class="flex flex-col gap-1 text-xs">
+                        <a href="literatura.html" class="text-gray-600 hover:text-red-600 hover:underline">Literatura</a>
+                        <a href="cine-y-series.html" class="text-gray-600 hover:text-red-600 hover:underline">Cine y Series</a>
+                        <a href="musica.html" class="text-gray-600 hover:text-red-600 hover:underline">Música</a>
+                    </div>
                 </div>
-                <div class="bg-white p-4 rounded shadow border border-gray-200">
-                    <span class="block text-red-600 font-bold mb-1">MIÉRCOLES</span>
-                    <a href="ciencia.html" class="text-gray-500 hover:underline">Ciencia</a>
+
+                <!-- MIÉRCOLES -->
+                <div class="bg-white p-4 rounded shadow border border-gray-200 flex flex-col justify-between">
+                    <span class="block text-red-600 font-bold mb-2">MIÉRCOLES</span>
+                    <div class="flex flex-col gap-1 text-xs">
+                        <a href="ciencia.html" class="text-gray-600 hover:text-red-600 hover:underline">Ciencias</a>
+                        <a href="tecnologia.html" class="text-gray-600 hover:text-red-600 hover:underline">Tecnología</a>
+                        <a href="gaming.html" class="text-gray-600 hover:text-red-600 hover:underline">Gaming</a>
+                    </div>
                 </div>
-                <div class="bg-white p-4 rounded shadow border border-gray-200">
-                    <span class="block text-red-600 font-bold mb-1">VIERNES</span>
-                    <a href="mundo-actoral.html" class="text-gray-500 hover:underline">Mundo Actoral</a>
+
+                <!-- VIERNES -->
+                <div class="bg-white p-4 rounded shadow border border-gray-200 flex flex-col justify-between">
+                    <span class="block text-red-600 font-bold mb-2">VIERNES</span>
+                    <div class="flex flex-col gap-1 text-xs">
+                        <a href="mundo-actoral.html" class="text-gray-600 hover:text-red-600 hover:underline">Mundo Actoral</a>
+                        <a href="eventos.html" class="text-gray-600 hover:text-red-600 hover:underline">Eventos</a>
+                    </div>
                 </div>
-                <div class="bg-white p-4 rounded shadow border border-gray-200">
-                    <span class="block text-red-600 font-bold mb-1">DOMINGO</span>
-                    <a href="deportes.html" class="text-gray-500 hover:underline">Deportes</a>
+
+                <!-- DOMINGO -->
+                <div class="bg-white p-4 rounded shadow border border-gray-200 flex flex-col justify-between">
+                    <span class="block text-red-600 font-bold mb-2">DOMINGO</span>
+                    <div class="flex flex-col gap-1 text-xs">
+                        <a href="deportes.html" class="text-gray-600 hover:text-red-600 hover:underline">Deportes</a>
+                        <a href="esports.html" class="text-gray-600 hover:text-red-600 hover:underline">eSports</a>
+                    </div>
                 </div>
+
             </div>
         </section>
 
