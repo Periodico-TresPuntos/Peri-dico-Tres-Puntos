@@ -3,127 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tres Puntos - Ciencia</title>
-    <!-- Tailwind CSS -->
+    <title>Ciencia | Tres Puntos</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Librería para leer Markdown -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
-<body class="bg-gray-50 text-gray-900">
+<body class="bg-gray-100 text-gray-800">
 
-    <!-- CABECERA -->
+    <!-- Cabecera del periódico -->
     <header class="bg-white border-b border-gray-300 py-6 text-center">
-        <div class="container mx-auto px-4">
-            <a href="index.html" class="text-3xl md:text-5xl font-serif font-bold tracking-wider text-black">TRES PUNTOS</a>
-            <p class="text-xs italic text-gray-600 mt-1">"No esperes, el suspenso... continuará"</p>
-        </div>
+        <h1 class="text-4xl md:text-5xl font-serif tracking-widest text-gray-900 font-bold">TRES PUNTOS</h1>
+        <p class="text-xs tracking-widest text-gray-500 uppercase mt-1">No esperes, el suspenso... continuará</p>
     </header>
 
-    <!-- MENÚ DE NAVEGACIÓN -->
-    <nav class="bg-black text-white sticky top-0 z-50 shadow-md">
-        <div class="container mx-auto px-4 flex flex-wrap justify-center items-center gap-4 py-3 text-xs md:text-sm uppercase tracking-wider">
-            <a href="index.html" class="hover:text-red-400 transition">Portada</a>
-            <span>|</span>
-            <a href="cine-y-series.html" class="hover:text-red-400 transition">Cine y Series</a>
-            <span>|</span>
-            <a href="mundo-actoral.html" class="hover:text-red-400 transition">Mundo Actoral</a>
-            <span>|</span>
-            <a href="gaming.html" class="hover:text-red-400 transition">Gaming</a>
-            <span>|</span>
-            <a href="esports.html" class="hover:text-red-400 transition">eSports</a>
-            <span>|</span>
-            <a href="musica.html" class="hover:text-red-400 transition">Música</a>
-            <span>|</span>
-            <a href="literatura.html" class="hover:text-red-400 transition">Literatura</a>
-            <span>|</span>
-            <a href="eventos.html" class="hover:text-red-400 transition">Eventos</a>
-            <span>|</span>
-            <a href="tecnologia.html" class="hover:text-red-400 transition">Tecnología</a>
-            <span>|</span>
-            <a href="ciencia.html" class="hover:text-red-400 transition">Ciencia</a>
-            <span>|</span>
-            <a href="deportes.html" class="hover:text-red-400 transition">Deportes</a>
-            <span>|</span>
-            <a href="local.html" class="hover:text-red-400 transition">Local</a>
+    <!-- Barra de Navegación / Secciones -->
+    <nav class="bg-gray-900 text-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex flex-wrap justify-center gap-4 text-xs font-semibold tracking-wider">
+            <a href="index.html" class="hover:text-red-400">PORTADA</a>
+            <a href="cine-y-series.html" class="hover:text-red-400">CINE Y SERIES</a>
+            <a href="mundo-actoral.html" class="hover:text-red-400">MUNDO ACTORAL</a>
+            <a href="gaming.html" class="hover:text-red-400">GAMING</a>
+            <a href="esports.html" class="hover:text-red-400">ESPORTS</a>
+            <a href="musica.html" class="hover:text-red-400">MÚSICA</a>
+            <a href="literatura.html" class="hover:text-red-400">LITERATURA</a>
+            <a href="eventos.html" class="hover:text-red-400">EVENTOS</a>
+            <a href="tecnologia.html" class="hover:text-red-400">TECNOLOGÍA</a>
+            <a href="ciencia.html" class="text-red-500 hover:text-red-400">CIENCIA</a>
+            <a href="deportes.html" class="hover:text-red-400">DEPORTES</a>
+            <a href="local.html" class="hover:text-red-400">LOCAL</a>
         </div>
     </nav>
 
-    <!-- CONTENEDOR PRINCIPAL DE LA SECCIÓN -->
-    <main class="max-w-4xl mx-auto p-6 mt-6">
-        <!-- NOMBRE DE LA SECCIÓN -->
-        <h2 id="nombre-seccion" class="text-3xl font-serif font-bold border-b-2 border-black pb-2 mb-6 uppercase">Ciencia</h2>
-        <p class="text-sm text-gray-600 mb-8" id="descripcion-seccion">Espacio dedicado a las noticias y actualidad sobre la ciencia y sus avances para el mundo.</p>
-        
-        <!-- LISTA DINÁMICA DE NOTICIAS -->
-        <div id="lista-noticias" class="space-y-8">
-            <p class="text-gray-500 italic">Cargando publicaciones...</p>
+    <!-- Contenido Principal -->
+    <main class="container mx-auto px-4 py-8 max-w-4xl">
+        <div class="mb-8 border-b border-gray-300 pb-4">
+            <h2 id="titulo-seccion" class="text-3xl font-serif font-bold text-gray-900 uppercase">Ciencia</h2>
+            <p class="text-xs text-gray-500 mt-1">Artículos y publicaciones recientes</p>
+        </div>
+
+        <div id="noticias-container" class="space-y-8">
+            <!-- Contenido dinámico -->
         </div>
     </main>
 
-    <!-- SCRIPT DE CARGA AUTOMÁTICA -->
+    <!-- Pie de página -->
+    <footer class="text-center py-6 text-gray-400 text-xs mt-12 border-t border-gray-200">
+        <p>Tres Puntos &copy; 2026 | No esperes, el suspenso... continuará</p>
+    </footer>
+
+    <!-- Script de carga -->
     <script>
-        const path = window.location.pathname;
-        const filename = path.substring(path.lastIndexOf('/') + 1).replace('.html', '');
-        
-        const seccionesMap = {
-            "ciencia": "Ciencia",
-            "cine-y-series": "Cine y Series",
-            "deportes": "Deportes",
-            "esports": "eSports",
-            "eventos": "Eventos",
-            "gaming": "Gaming",
-            "literatura": "Literatura",
-            "local": "Local",
-            "mundo-actoral": "Mundo Actoral",
-            "musica": "Música",
-            "tecnologia": "Tecnología"
-        };
+        document.addEventListener("DOMContentLoaded", function() {
+            const nombreSeccion = "Ciencia"; 
 
-        const seccionActual = seccionesMap[filename] || "General";
-        document.getElementById('nombre-seccion').innerText = seccionActual;
+            fetch('noticias.json')
+                .then(response => response.json())
+                .then(data => {
+                    const contenedor = document.getElementById('noticias-container');
+                    contenedor.innerHTML = "";
 
-        async function cargarNoticias() {
-            const contenedor = document.getElementById('lista-noticias');
-            try {
-                const respuesta = await fetch('/noticias.json');
-                if (!respuesta.ok) throw new Error("No se encontró el archivo de datos.");
-                
-                const datos = await respuesta.json();
-                const articulos = datos.articulos || [];
+                    const articulosFiltrados = data.articulos.filter(art => 
+                        art.seccion && art.seccion.trim().toLowerCase() === nombreSeccion.toLowerCase()
+                    );
 
-                // Filtramos las noticias que pertenecen a esta sección exacta
-                const filtrados = articulos.filter(art => art.seccion === seccionActual);
+                    if (articulosFiltrados.length === 0) {
+                        contenedor.innerHTML = `
+                            <div class="bg-white p-6 rounded shadow border border-gray-200 text-center">
+                                <p class="text-gray-500 italic text-sm">De momento no hay noticias en esta sección, por favor busque en las demás o espere a la fecha de publicación de esta, muchas gracias.</p>
+                            </div>
+                        `;
+                        return;
+                    }
 
-                if (filtrados.length === 0) {
-                    contenedor.innerHTML = `<div class="bg-white p-6 rounded shadow border border-gray-200 text-center"><p class="text-gray-500 italic">Aún no hay noticias publicadas en ${seccionActual}. ¡Usa el panel de administración para agregar la primera!</p></div>`;
-                    return;
-                }
-
-                // Dibujamos las noticias respetando el orden y formato periodístico
-                contenedor.innerHTML = filtrados.map((art, index) => `
-                    <article class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                        <div class="flex items-center justify-between mb-2">
-                            <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Noticia #${index + 1}</span>
-                            ${art.destacado ? '<span class="bg-black text-white text-xs font-bold px-2 py-0.5 rounded uppercase">★ Destacado</span>' : ''}
-                        </div>
-                        <h3 class="text-2xl font-serif font-bold text-gray-900 mb-2">${art.title}</h3>
-                        <p class="text-xs text-gray-500 mb-4">Publicado: ${art.date ? new Date(art.date).toLocaleDateString() : 'Reciente'}</p>
+                    articulosFiltrados.forEach(art => {
+                        const fechaFormateada = art.date ? new Date(art.date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' }) : '';
+                        const div = document.createElement('div');
+                        div.className = "bg-white rounded shadow p-6 md:p-8 border border-gray-200";
                         
-                        ${art.image ? `<img src="${art.image}" alt="Imagen de la noticia" class="mb-4 rounded max-h-96 w-full object-cover shadow-inner">` : ''}
-                        
-                        <div class="text-gray-800 leading-relaxed space-y-3 prose">
-                            ${marked.parse(art.body || '')}
-                        </div>
-                    </article>
-                `).join('');
-
-            } catch (error) {
-                console.error(error);
-                contenedor.innerHTML = '<div class="bg-white p-6 rounded shadow border border-gray-200 text-center"><p class="text-gray-600">Todavia no hay noticas cargadas, revise en otra seccion o espere al dia seleccionado en el cronograma, muchas gracias.</p></div>';
-            }
-        }
-
-        cargarNoticias();
+                        div.innerHTML = `
+                            ${art.destacado ? '<div class="inline-block bg-red-600 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider mb-3">Destacado</div>' : ''}
+                            <h3 class="text-2xl font-serif font-bold text-gray-900 mb-2">${art.title}</h3>
+                            ${fechaFormateada ? `<p class="text-xs text-gray-400 mb-4">${fechaFormateada}</p>` : ''}
+                            ${art.image ? `<div class="mb-4 overflow-hidden rounded max-h-96"><img src="${art.image}" alt="${art.title}" class="w-full h-auto object-cover"></div>` : ''}
+                            <div class="text-gray-600 text-base leading-relaxed space-y-3">
+                                <p>${art.body || ''}</p>
+                            </div>
+                        `;
+                        contenedor.appendChild(div);
+                    });
+                });
+        });
     </script>
 </body>
 </html>
