@@ -9,12 +9,13 @@ collections:
   - name: "portada"
     label: "Portada del Periódico"
     files:
-      - file: "index.html"
+      - file: "portada.json"
         label: "Editar Portada"
-        name: "index"
+        name: "portada_json"
         fields:
           - {label: "Título de la Noticia Destacada", name: "titulo_destacado", widget: "string"}
           - {label: "Texto del Destacado", name: "texto_destacado", widget: "text"}
+          - {label: "Enlace o ID de la Noticia", name: "enlace", widget: "string", required: false}
 
   - name: "noticias"
     label: "Secciones y Noticias"
