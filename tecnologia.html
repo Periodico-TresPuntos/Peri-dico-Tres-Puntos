@@ -50,7 +50,7 @@
         <p>Tres Puntos &copy; 2026 | No esperes, el suspenso... continuará</p>
     </footer>
 
-    <!-- Script de carga -->
+    <!-- Script de carga corregido -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const nombreSeccion = "Tecnología"; 
@@ -61,9 +61,12 @@
                     const contenedor = document.getElementById('noticias-container');
                     contenedor.innerHTML = "";
 
-                    const articulosFiltrados = data.articulos.filter(art => 
-                        art.seccion && art.seccion.trim().toLowerCase() === nombreSeccion.toLowerCase()
-                    );
+                    const listaArticulos = Array.isArray(data) ? data : (data.articulos || []);
+
+                    const articulosFiltrados = listaArticulos.filter(art => {
+                        const seccionArticulo = art.seccion || art.section || "";
+                        return seccionArticulo.trim().toLowerCase() === nombreSeccion.trim().toLowerCase();
+                    });
 
                     if (articulosFiltrados.length === 0) {
                         contenedor.innerHTML = `
@@ -81,15 +84,18 @@
                         
                         div.innerHTML = `
                             ${art.destacado ? '<div class="inline-block bg-red-600 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider mb-3">Destacado</div>' : ''}
-                            <h3 class="text-2xl font-serif font-bold text-gray-900 mb-2">${art.title}</h3>
+                            <h3 class="text-2xl font-serif font-bold text-gray-900 mb-2">${art.title || art.titulo || ''}</h3>
                             ${fechaFormateada ? `<p class="text-xs text-gray-400 mb-4">${fechaFormateada}</p>` : ''}
-                            ${art.image ? `<div class="mb-4 overflow-hidden rounded max-h-96"><img src="${art.image}" alt="${art.title}" class="w-full h-auto object-cover"></div>` : ''}
+                            ${art.image ? `<div class="mb-4 overflow-hidden rounded max-h-96"><img src="${art.image}" alt="${art.title || ''}" class="w-full h-auto object-cover"></div>` : ''}
                             <div class="text-gray-600 text-base leading-relaxed space-y-3">
-                                <p>${art.body || ''}</p>
+                                <p>${art.body || art.contenido || ''}</p>
                             </div>
                         `;
                         contenedor.appendChild(div);
                     });
+                })
+                .catch(error => {
+                    console.error("Error al cargar el JSON:", error);
                 });
         });
     </script>
